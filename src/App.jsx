@@ -1,16 +1,13 @@
 import './App.css'
+import Navbar from './Component/navbar/Navbar'
 
 function App() {
 
 
   return (
 
+    <Navbar>  </Navbar>
 
-    <div>
-      <h1 className='text-4xl font-bold text-center mt-10'>
-        Welcom to DigiTools Platform
-      </h1>
-    </div>
 
   )
 }
