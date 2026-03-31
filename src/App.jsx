@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './Component/Herosection/Banner'
+import SmallHero from './Component/Herosection/SmallHero'
 import Navbar from './Component/navbar/Navbar'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
     <Navbar>  </Navbar>
     <Banner> </Banner>
+    <SmallHero></SmallHero>
     </>
 
     
