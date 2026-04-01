@@ -55,7 +55,7 @@ const Navbar = ({ cards }) => {
         </div>
 
         {/* Login link */}
-        <a href="#" className="hidden sm:inline text-gray-700 hover:text-purple-600 font-medium transition-colors">
+        <a href="#" className="hidden sm:inline text-black text-lg  hover:text-purple-600 font-medium transition-colors">
           Login
         </a>
 
