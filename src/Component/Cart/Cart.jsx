@@ -7,7 +7,6 @@ const Cart = ({ cards, setCard }) => {
 
     const totalPrice = cards.reduce((sum, card) => sum + card.price, 0)
 
-
     const handleCheckout = () => {
 
         toast.success("Payment successful")
@@ -15,7 +14,6 @@ const Cart = ({ cards, setCard }) => {
         setCard([])
 
     }
-
 
     const handleDelete = (card) => {
 
@@ -26,7 +24,6 @@ const Cart = ({ cards, setCard }) => {
         setCard(filteredArray)
 
     }
-
 
     return (
 
@@ -42,7 +39,6 @@ const Cart = ({ cards, setCard }) => {
 
             </div>
 
-
             {
 
                 cards.length === 0
@@ -55,11 +51,11 @@ const Cart = ({ cards, setCard }) => {
 
                             <div className='flex justify-center h-40'>
 
-                                <FaCartArrowDown className='pt-10 w-25 h-25' />
+                                <FaCartArrowDown className='pt-10 w-20 h-20 md:w-25 md:h-25' />
 
                             </div>
 
-                            <p className='text-center font-bold m-3 text-4xl mb-10'>
+                            <p className='text-center font-bold m-3 text-3xl md:text-4xl mb-10'>
 
                                 Your Cart Empty
 
@@ -75,29 +71,29 @@ const Cart = ({ cards, setCard }) => {
 
                         <>
 
-                            <div className="p-8 space-y-6">
+                            <div className="p-4 md:p-8 space-y-6">
                                 {
                                     cards.map((card) => (
                                         <div
                                             key={card.id}
-                                            className="flex items-center justify-between bg-gray-50 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all"
+                                            className="flex items-center gap-4 md:gap-5 bg-gray-50 rounded-3xl p-4 md:p-6 shadow-sm hover:shadow-md transition-all"
                                         >
 
-                                            <div className="flex items-center gap-5">
+                                            <div className="flex items-center gap-4 md:gap-5 min-w-0">
 
                                                 <img
-                                                    className="h-14 w-14 rounded-xl"
+                                                    className="h-12 w-12 md:h-14 md:w-14 rounded-xl"
                                                     src={card.icon}
                                                     alt={card.name}
                                                 />
 
-                                                <div>
+                                                <div className="min-w-0">
 
-                                                    <h4 className="font-semibold text-lg">
+                                                    <h4 className="font-semibold text-base md:text-lg truncate">
                                                         {card.name}
                                                     </h4>
 
-                                                    <p className="text-gray-600 font-bold text-base">
+                                                    <p className="text-gray-600 font-bold text-sm md:text-base">
                                                         ${card.price}
                                                     </p>
 
@@ -105,12 +101,11 @@ const Cart = ({ cards, setCard }) => {
 
                                             </div>
 
-
                                             <button
                                                 onClick={() => handleDelete(card)}
-                                                className="flex items-center gap-2 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-xl text-base font-semibold transition-all duration-300"
+                                                className="ml-auto flex items-center gap-2 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-xl text-sm md:text-base font-semibold transition-all duration-300 whitespace-nowrap"
                                             >
-                                                <MdDelete size={22} />
+                                                <MdDelete size={20} />
                                                 Remove
                                             </button>
 
@@ -118,7 +113,6 @@ const Cart = ({ cards, setCard }) => {
                                     ))
                                 }
                             </div>
-
 
                             <div className="p-6">
 
@@ -130,14 +124,13 @@ const Cart = ({ cards, setCard }) => {
 
                                     </span>
 
-                                    <span className="text-3xl font-bold">
+                                    <span className="text-2xl md:text-3xl font-bold">
 
                                         ${totalPrice}
 
                                     </span>
 
                                 </div>
-
 
                                 <button
                                     onClick={handleCheckout}
