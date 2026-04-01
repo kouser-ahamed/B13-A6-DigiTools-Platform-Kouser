@@ -11,6 +11,7 @@ import Footer from './Component/Footer/Footer'
 import ModelLode from './Component/AllModelCard/ModelLode'
 import Cart from './Component/Cart/Cart'
 import StartedStep from './Component/ StartedStep/ StartedStep'
+import PriceCard from './Component/PriceCard/PriceCard'
 
 
 // fetch data
@@ -90,6 +91,7 @@ function App() {
 
 
       <StartedStep> </StartedStep>
+      <PriceCard> </PriceCard>
 
 
       <Footer />

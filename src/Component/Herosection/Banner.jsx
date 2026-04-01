@@ -18,7 +18,7 @@ const Banner = () => {
                         Supercharge Your <br />
                         Digital Workflow
                     </h1>
-
+    
                     <p className="text-xl text-gray-600 max-w-full">
                         <span>
                             Access premium AI tools, design assets, templates, and productivity <br />
