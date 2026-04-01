@@ -33,15 +33,29 @@ const Banner = () => {
                     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 pt-4">
 
                         {/* Explore Products Button */}
-                        <button className="w-full sm:w-[300px] md:w-auto bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 cursor-pointer text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-lg transition-transform duration-300 ease-in-out hover:scale-105">
-                            Explore Products
-                        </button>
+                    <button className="w-full sm:w-[300px] md:w-auto 
+bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 
+cursor-pointer text-white 
+px-6 sm:px-8 py-3 sm:py-4 
+rounded-full font-semibold text-lg 
+whitespace-nowrap
+transition-transform duration-300 ease-in-out hover:scale-105">
+  Explore Products
+</button>
 
-                        {/* Watch Demo Button */}
-                        <button className="w-full sm:w-[300px] md:w-auto border-2 border-[#4F39F6] bg-white text-gray-800 hover:bg-gradient-to-r hover:from-indigo-600 hover:via-violet-600 hover:to-purple-600 hover:text-white cursor-pointer px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:scale-105">
-                            <BsCaretRight />
-                            Watch Demo
-                        </button>
+
+{/* Watch Demo Button */}
+<button className="w-full sm:w-[300px] md:w-auto 
+border-2 border-[#4F39F6] bg-white text-gray-800 
+hover:bg-gradient-to-r hover:from-indigo-600 hover:via-violet-600 hover:to-purple-600 hover:text-white 
+cursor-pointer px-6 sm:px-8 py-3 sm:py-4 
+rounded-full font-semibold text-lg 
+whitespace-nowrap
+flex items-center justify-center gap-2 
+transition-all duration-300 ease-in-out hover:scale-105">
+  <BsCaretRight />
+  Watch Demo
+</button>
 
                     </div>
                 </div>
