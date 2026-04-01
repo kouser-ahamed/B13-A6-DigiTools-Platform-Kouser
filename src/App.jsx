@@ -1,43 +1,98 @@
 import './App.css'
+import { useState } from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import Banner from './Component/Herosection/Banner'
 import PremiumTools from './Component/Herosection/PremiumTools'
 import SmallHero from './Component/Herosection/SmallHero'
 import Navbar from './Component/navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import ModelLode from './Component/AllModelCard/ModelLode'
+import Cart from './Component/Cart/Cart'
 
 
-
+// fetch data
 const promisedata = async () => {
   const response = await fetch('/modeldata.json')
   return response.json()
-
 }
 
 const dataPromise = promisedata()
-console.log(dataPromise)
+
 
 function App() {
 
+  const [cards, setCard] = useState([])
+  const [activeTab, setActiveTab] = useState("Products")
 
   return (
-
     <>
-    <Navbar>  </Navbar>
-    <Banner> </Banner>
-    <SmallHero></SmallHero>
-    <PremiumTools></PremiumTools>
+      <Navbar cards={cards} />
+
+      <Banner />
+      <SmallHero />
+      <PremiumTools />
+
+      {/* Tabs */}
+      <div className="tabs tabs-box bg-transparent font-bold justify-center mb-9">
+
+        <input
+          onClick={() => setActiveTab("Products")}
+          type="radio"
+          name="tabs"
+          className={`tab w-40 rounded-full cursor-pointer
+          ${activeTab === "Products"
+              ? "bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] text-white"
+              : ""
+            }`}
+          aria-label="Products"
+          defaultChecked
+        />
+
+        <input
+          onClick={() => setActiveTab("Cart")}
+          type="radio"
+          name="tabs"
+          className={`tab w-40 rounded-full cursor-pointer
+          ${activeTab === "Cart"
+              ? "bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] text-white"
+              : ""
+            }`}
+          aria-label={`Cart (${cards.length})`}
+        />
+
+      </div>
 
 
+      {/* Conditional render */}
+      {
 
-    <ModelLode dataPromise={dataPromise}></ModelLode>
-    <Footer></Footer>
+        activeTab === "Products"
+
+          ?
+
+          <ModelLode
+            dataPromise={dataPromise}
+            cards={cards}
+            setCard={setCard}
+          />
+
+          :
+
+          <Cart
+            cards={cards}
+            setCard={setCard}
+          />
+
+      }
+
+
+      <ToastContainer />
+
+      <Footer />
 
     </>
-
-    
-
-
   )
 }
 

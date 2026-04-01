@@ -1,94 +1,146 @@
 [
   {
     "id": 1,
-    "name": "Starter Plan",
-    "description": "Perfect for individuals looking to build a professional presence online.",
-    "price": 0,
-    "period": "one-time",
-    "tag": "Free",
-    "tagType": "new",
-    "features": ["3 Basic Templates", "Manual PDF Export", "Community Support"],
-    "icon": "https://i.ibb.co.com/DHkX9sLZ/writing-2327400-1.png"
-  },
-  {
-    "id": 2,
-    "name": "Pro Builder",
-    "description": "The ultimate toolkit for serious job seekers and developers.",
-    "price": 19,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "popular",
-    "features": [
-      "50+ Premium Templates",
-      "ATS Optimization",
-      "Unlimited Exports",
-      "Priority Email Support"
-    ],
-    "icon": "https://i.ibb.co.com/zWT4YvcF/design-tool.png"
-  },
-  {
-    "id": 3,
-    "name": "Enterprise Suite",
-    "description": "Advanced features for teams and high-volume recruiting agencies.",
-    "price": 199,
-    "period": "yearly",
-    "tag": "Most Value",
-    "tagType": "best seller",
-    "features": [
-      "150+ Templates",
-      "Custom Branding",
-      "Team Collaboration Tools",
-      "Dedicated Account Manager",
-      "API Access"
-    ],
-    "icon": "https://i.ibb.co.com/kVSsMjHT/Group-7.png"
-  },
-  {
-    "id": 4,
-    "name": "AI Content Writer",
-    "description": "Leverage AI to generate high-converting descriptions automatically.",
-    "price": 9,
+    "name": "AI Resume Generator",
+    "description": "Generate professional resumes instantly using smart AI suggestions.",
+    "price": 7,
     "period": "monthly",
     "tag": "AI Powered",
     "tagType": "new",
     "features": [
-      "Unlimited AI Keywords",
-      "Grammar Check",
-      "Tone Adjustment",
+      "Auto Resume Builder",
+      "Smart Formatting",
+      "Keyword Optimization",
+      "Instant PDF Export"
+    ],
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNG1_-22AdeXmHd6oYGrYbVbGH_UKPrmWyMw&s"
+  },
+  {
+    "id": 2,
+    "name": "AI Cover Letter Writer",
+    "description": "Create personalized cover letters tailored to job descriptions.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Role-based Suggestions",
+      "Editable Templates",
+      "Grammar Correction",
+      "Export Options"
+    ],
+    "icon": "https://geekflare.com/wp-content/uploads/2023/07/best-ai-cover-letter-generators.jpg"
+  },
+  {
+    "id": 3,
+    "name": "AI Portfolio Builder",
+    "description": "Automatically generate developer portfolios with AI layout support.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Auto Layout Generator",
+      "Responsive Design",
+      "Live Preview",
+      "Custom Sections"
+    ],
+    "icon": "https://i.ytimg.com/vi/rl0sFrI9nv0/sddefault.jpg"
+  },
+  {
+    "id": 4,
+    "name": "AI Code Assistant",
+    "description": "Boost productivity with real-time AI coding suggestions.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": [
+      "Real-time Suggestions",
+      "Bug Detection",
+      "Auto Completion",
       "Multi-language Support"
     ],
-    "icon": "https://i.ibb.co.com/27X6T0tQ/operation.png"
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR60ds-RZQ9cVOJlIgmxQf1oRsSjhsQLd8yCA&s"
   },
   {
     "id": 5,
-    "name": "Design Pro Add-on",
-    "description": "Unlock advanced CSS controls and custom fonts for your projects.",
-    "price": 25,
-    "period": "one-time",
-    "tag": "Upgrade",
-    "tagType": "popular",
+    "name": "AI Blog Writer",
+    "description": "Generate SEO-friendly blog content in seconds using AI.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Content Tool",
+    "tagType": "new",
     "features": [
-      "Custom CSS Editor",
-      "Google Fonts Integration",
-      "SVG Icon Pack",
-      "Dark Mode Toggle"
+      "SEO Optimization",
+      "Topic Generator",
+      "Auto Headlines",
+      "Multi-language Writing"
     ],
-    "icon": "https://i.ibb.co.com/zhj4Y8G8/portfolio.png"
+    "icon": "https://cdn.prod.website-files.com/6756905c4f1eabb644da6afe/676aca52de70d0f2fd797209_Meta_Image_5_optimized_4000.png"
   },
   {
     "id": 6,
-    "name": "Analytics Dashboard",
-    "description": "Track how many people are viewing your profile or products in real-time.",
+    "name": "AI Image Generator",
+    "description": "Create stunning visuals and graphics from simple text prompts.",
+    "price": 18,
+    "period": "monthly",
+    "tag": "Creative",
+    "tagType": "best seller",
+    "features": [
+      "Text-to-Image",
+      "HD Image Export",
+      "Style Variations",
+      "Prompt Library"
+    ],
+    "icon": "https://play-lh.googleusercontent.com/AWRmxmi8H5oDhGZeXdNi9Hun-Smc_m4OsV2jb_3H2J_cuOf-aD7NjaRxpiGAJGi24Wm74_SINa95zeDC24VLAw=w240-h480-rw"
+  },
+  {
+    "id": 7,
+    "name": "AI Chatbot Builder",
+    "description": "Design smart chatbots for websites without coding.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "Automation",
+    "tagType": "popular",
+    "features": [
+      "Drag & Drop Builder",
+      "Website Integration",
+      "Custom Responses",
+      "Analytics Dashboard"
+    ],
+    "icon": "https://www.dealfuel.com/wp-content/uploads/2025/01/Best-AI-Chatbot-Builders.webp"
+  },
+  {
+    "id": 8,
+    "name": "AI Voice Generator",
+    "description": "Convert text into natural human-like voice instantly.",
+    "price": 14,
+    "period": "monthly",
+    "tag": "Voice Tech",
+    "tagType": "new",
+    "features": [
+      "Natural Voice Output",
+      "Multiple Accents",
+      "MP3 Export",
+      "Speed Control"
+    ],
+    "icon": "https://www.weetechsolution.com/wp-content/uploads/2023/02/Cover.png"
+  },
+  {
+    "id": 9,
+    "name": "AI Analytics Predictor",
+    "description": "Predict trends and user behavior using AI-powered analytics.",
     "price": 49,
     "period": "yearly",
     "tag": "Insight",
     "tagType": "best seller",
     "features": [
-      "Real-time Visitor Map",
-      "Conversion Tracking",
-      "Weekly PDF Reports",
-      "Device Breakdown"
+      "Trend Prediction",
+      "User Behavior Analysis",
+      "Visual Reports",
+      "Export Dashboard Data"
     ],
-    "icon": "https://i.ibb.co.com/qYbjF3b6/social-media.png"
+    "icon": "https://am-bits.com/wp-content/uploads/2023/02/1200na628_banner_predictive-analytics-5.jpg"
   }
 ]

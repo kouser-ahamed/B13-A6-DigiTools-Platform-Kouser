@@ -1,0 +1,165 @@
+import React from 'react'
+import { toast } from 'react-toastify'
+import { MdDelete } from "react-icons/md"
+import { FaCartArrowDown } from "react-icons/fa6";
+
+const Cart = ({ cards, setCard }) => {
+
+    const totalPrice = cards.reduce((sum, card) => sum + card.price, 0)
+
+
+    const handleCheckout = () => {
+
+        toast.success("Payment successful")
+
+        setCard([])
+
+    }
+
+
+    const handleDelete = (card) => {
+
+        const filteredArray = cards.filter((c) => c.id !== card.id)
+
+        toast.warning(`${card.name} removed`)
+
+        setCard(filteredArray)
+
+    }
+
+
+    return (
+
+        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 mb-10">
+
+            <div className="px-6 py-5">
+
+                <h2 className="text-2xl font-semibold">
+
+                    Your Cart
+
+                </h2>
+
+            </div>
+
+
+            {
+
+                cards.length === 0
+
+                    ?
+
+                    (
+
+                        <div>
+
+                            <div className='flex justify-center h-40'>
+
+                                <FaCartArrowDown className='pt-10 w-25 h-25' />
+
+                            </div>
+
+                            <p className='text-center font-bold m-3 text-4xl mb-10'>
+
+                                Your Cart Empty
+
+                            </p>
+
+                        </div>
+
+                    )
+
+                    :
+
+                    (
+
+                        <>
+
+                            <div className="p-8 space-y-6">
+                                {
+                                    cards.map((card) => (
+                                        <div
+                                            key={card.id}
+                                            className="flex items-center justify-between bg-gray-50 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all"
+                                        >
+
+                                            <div className="flex items-center gap-5">
+
+                                                <img
+                                                    className="h-14 w-14 rounded-xl"
+                                                    src={card.icon}
+                                                    alt={card.name}
+                                                />
+
+                                                <div>
+
+                                                    <h4 className="font-semibold text-lg">
+                                                        {card.name}
+                                                    </h4>
+
+                                                    <p className="text-gray-600 font-bold text-base">
+                                                        ${card.price}
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <button
+                                                onClick={() => handleDelete(card)}
+                                                className="flex items-center gap-2 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-xl text-base font-semibold transition-all duration-300"
+                                            >
+                                                <MdDelete size={22} />
+                                                Remove
+                                            </button>
+
+                                        </div>
+                                    ))
+                                }
+                            </div>
+
+
+                            <div className="p-6">
+
+                                <div className="flex justify-between items-center mb-6">
+
+                                    <span className="text-lg font-medium">
+
+                                        Total
+
+                                    </span>
+
+                                    <span className="text-3xl font-bold">
+
+                                        ${totalPrice}
+
+                                    </span>
+
+                                </div>
+
+
+                                <button
+                                    onClick={handleCheckout}
+                                    className="w-full bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] hover:from-[#3f2de0] hover:via-[#5a3cff] hover:to-[#6b52ff] text-white py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                                >
+
+                                    Proceed To Checkout
+
+                                </button>
+
+                            </div>
+
+                        </>
+
+                    )
+
+            }
+
+        </div>
+
+    )
+
+}
+
+export default Cart
