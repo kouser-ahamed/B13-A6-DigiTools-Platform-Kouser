@@ -13,7 +13,7 @@ const StartedStep = () => {
           <h1 className="text-5xl font-bold text-gray-900">
             Get Started In 3 Steps
           </h1>
-         <p className="text-gray-500 mt-4 text-lg">
+         <p className="text-[#627382] mt-4 text-lg">
   Start using premium digital tools in minutes, not hours.
 </p>
         </div>

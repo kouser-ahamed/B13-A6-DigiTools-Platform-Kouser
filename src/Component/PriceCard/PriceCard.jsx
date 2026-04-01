@@ -9,7 +9,7 @@ const PriceCard = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 transition-all duration-300 ease-in-out">
             Simple, Transparent Pricing
           </h1>
-          <p className="text-gray-400 mt-3 text-sm sm:text-base md:text-lg lg:text-lg transition-all duration-300 ease-in-out">
+          <p className="text-[#627382] mt-3 text-sm sm:text-base md:text-lg lg:text-lg transition-all duration-300 ease-in-out">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
@@ -54,7 +54,7 @@ transition-all duration-300 ease-in-out"
 
           {/* Pro Card */}
           <div className="relative bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-600 text-white p-12 rounded-3xl shadow-xl min-h-[450px] flex flex-col transition-all scale-105">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] text-xs font-bold px-3 py-1 rounded-full uppercase">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] text-xs font-bold px-3 py-1 rounded-full">
               Most Popular
             </div>
             <h3 className="text-xl font-bold mt-2">Pro</h3>
