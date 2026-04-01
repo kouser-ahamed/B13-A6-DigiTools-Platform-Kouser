@@ -40,7 +40,7 @@ const PriceCard = () => {
                 <FaCheck className='text-[#30B868]' size={14} /> 1 project per month
               </li>
             </ul>
-            <button className="w-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white py-3 rounded-2xl font-semibold hover:from-indigo-700 hover:via-violet-700 hover:to-purple-700 transition">
+            <button className="mt-auto w-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white py-3 rounded-2xl font-semibold hover:from-indigo-700 hover:via-violet-700 hover:to-purple-700 transition">
               Get Started Free
             </button>
           </div>
@@ -82,7 +82,7 @@ const PriceCard = () => {
                 Advanced analytics
               </li>
             </ul>
-            <button className="w-full bg-white text-purple-700 py-3 rounded-2xl font-bold hover:bg-gray-100 transition">
+            <button className="mt-auto w-full bg-white text-purple-700 py-3 rounded-2xl font-bold hover:bg-gray-100 transition">
               Start Pro Trial
             </button>
           </div>
@@ -121,7 +121,7 @@ const PriceCard = () => {
                 Custom branding
               </li>
             </ul>
-            <button className="w-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white py-3 rounded-2xl font-semibold hover:from-indigo-700 hover:via-violet-700 hover:to-purple-700 transition">
+            <button className="mt-auto w-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white py-3 rounded-2xl font-semibold hover:from-indigo-700 hover:via-violet-700 hover:to-purple-700 transition">
               Contact Sales
             </button>
           </div>
