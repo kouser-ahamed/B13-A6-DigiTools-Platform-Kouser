@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaDollarSign } from "react-icons/fa"
 import { GoCheckCircle } from "react-icons/go"
 import { toast } from 'react-toastify'
+import { FaCheck } from "react-icons/fa"; 
 
 const Card = ({ card, cards, setCard }) => {
 
@@ -29,7 +30,7 @@ const Card = ({ card, cards, setCard }) => {
 
   return (
 
-    <div className="border border-gray-200 rounded-3xl p-6 min-h-[620px] hover:shadow-xl transition-all">
+    <div className="border border-gray-200 rounded-3xl p-6 min-h-[620px] hover:shadow-xl hover:bg-gray-100 transition-all duration-300 cursor-pointer">
 
       {/* Tag */}
 
@@ -134,7 +135,7 @@ const Card = ({ card, cards, setCard }) => {
 
             <li key={i} className="flex items-center gap-2">
 
-              <GoCheckCircle className="text-green-500" />
+              <FaCheck className='text-[#30B868]' size={14} /> 
 
               {feature}
 
@@ -146,24 +147,19 @@ const Card = ({ card, cards, setCard }) => {
 
       </ul>
 
-
       {/* Button */}
 
       <button
         onClick={handleBuyButton}
-        className={`w-full py-4 rounded-2xl font-semibold transition
-
-        ${buy
-            ? "bg-green-500 text-white"
-            : "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white"
-          }
-        `}
+        className={`w-full py-4 rounded-full font-semibold transition-all duration-300 ease-in-out mt-auto
+    flex items-center justify-center
+    ${buy
+            ? "bg-green-500 text-white hover:bg-green-600 shadow-lg"
+            : "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white hover:scale-105 hover:shadow-lg"
+          }`}
       >
-
         {buy ? "Added to Cart" : "Buy Now"}
-
       </button>
-
     </div>
 
   )

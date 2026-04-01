@@ -13,16 +13,16 @@ const StartedStep = () => {
           <h1 className="text-5xl font-bold text-gray-900">
             Get Started In 3 Steps
           </h1>
-          <p className="text-gray-500 mt-4 text-xl">
-            Start using premium digital tools in minutes, not hours.
-          </p>
+         <p className="text-gray-500 mt-4 text-lg">
+  Start using premium digital tools in minutes, not hours.
+</p>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
 
           {/* Step 1 */}
-          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all border p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
+          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
             <span className="absolute top-6 right-6 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white text-base w-12 h-12 rounded-full flex items-center justify-center font-semibold">
               01
             </span>
@@ -40,7 +40,7 @@ const StartedStep = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all border p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
+          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
             <span className="absolute top-6 right-6 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white text-base w-12 h-12 rounded-full flex items-center justify-center font-semibold">
               02
             </span>
@@ -58,7 +58,7 @@ const StartedStep = () => {
           </div>
 
           {/* Step 3 */}
-          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all border p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
+          <div className="relative bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all p-12 text-center min-h-[450px] flex flex-col items-center justify-center">
             <span className="absolute top-6 right-6 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white text-base w-12 h-12 rounded-full flex items-center justify-center font-semibold">
               03
             </span>
