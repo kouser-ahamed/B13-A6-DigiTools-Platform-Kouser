@@ -13,14 +13,24 @@ const Workflow = () => {
           work smarter. Start your free trial today.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <button className="bg-white cursor-pointer text-purple-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300">
-            Explore Products
-          </button>
-          <button className="border-2 cursor-pointer border-white/50 text-white font-semibold px-8 py-3 rounded-full hover:bg-white/10 transition duration-300">
-            View Pricing
-          </button>
-        </div>
+       <div className="flex flex-wrap justify-center gap-4 mb-8">
+  
+  <button className="bg-white cursor-pointer text-purple-600 font-semibold px-8 py-3 rounded-full
+  hover:bg-gradient-to-r hover:from-indigo-600 hover:via-violet-600 hover:to-purple-600
+  hover:text-white hover:shadow-xl hover:scale-105
+  transition-all duration-300 ease-in-out">
+    Explore Products
+  </button>
+
+  <button className="border-2 cursor-pointer border-white/50 text-white font-semibold px-8 py-3 rounded-full
+  hover:border-transparent
+  hover:bg-gradient-to-r hover:from-indigo-600 hover:via-violet-600 hover:to-purple-600
+  hover:text-white hover:shadow-xl hover:scale-105
+  transition-all duration-300 ease-in-out">
+    View Pricing
+  </button>
+
+</div>
 
         <p className="text-sm opacity-80">
           14-day free trial • No credit card required • Cancel anytime
