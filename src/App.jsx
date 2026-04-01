@@ -10,6 +10,7 @@ import Navbar from './Component/navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import ModelLode from './Component/AllModelCard/ModelLode'
 import Cart from './Component/Cart/Cart'
+import StartedStep from './Component/ StartedStep/ StartedStep'
 
 
 // fetch data
@@ -43,7 +44,7 @@ function App() {
           name="tabs"
           className={`tab w-40 rounded-full cursor-pointer
           ${activeTab === "Products"
-              ? "bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] text-white"
+              ? "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white"
               : ""
             }`}
           aria-label="Products"
@@ -56,7 +57,7 @@ function App() {
           name="tabs"
           className={`tab w-40 rounded-full cursor-pointer
           ${activeTab === "Cart"
-              ? "bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] text-white"
+              ? "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white"
               : ""
             }`}
           aria-label={`Cart (${cards.length})`}
@@ -88,7 +89,8 @@ function App() {
       }
 
 
-      <ToastContainer />
+      <StartedStep> </StartedStep>
+
 
       <Footer />
 

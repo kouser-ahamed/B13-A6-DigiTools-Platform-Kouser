@@ -3,7 +3,7 @@ import React from 'react';
 const SmallHero = () => {
     return (
          <div>
-        <section className="bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] py-6 mb-10">
+        <section className="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 py-6 mb-10">
           <div className="max-w-7xl mx-auto grid md:grid-cols-5 gap-8 text-center text-white">
             <div>
               <h3 className="text-4xl font-bold">50K+</h3>

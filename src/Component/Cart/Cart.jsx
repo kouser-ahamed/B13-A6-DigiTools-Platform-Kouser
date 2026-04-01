@@ -141,7 +141,7 @@ const Cart = ({ cards, setCard }) => {
 
                                 <button
                                     onClick={handleCheckout}
-                                    className="w-full bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] hover:from-[#3f2de0] hover:via-[#5a3cff] hover:to-[#6b52ff] text-white py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                                    className="w-full bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 hover:from-[#3f2de0] hover:via-[#5a3cff] hover:to-[#6b52ff] text-white py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                                 >
 
                                     Proceed To Checkout

@@ -155,7 +155,7 @@ const Card = ({ card, cards, setCard }) => {
 
         ${buy
             ? "bg-green-500 text-white"
-            : "bg-gradient-to-r from-[#4F39F6] via-[#6C4CFF] to-[#7D63FF] text-white"
+            : "bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white"
           }
         `}
       >
