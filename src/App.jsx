@@ -12,6 +12,7 @@ import ModelLode from './Component/AllModelCard/ModelLode'
 import Cart from './Component/Cart/Cart'
 import StartedStep from './Component/ StartedStep/ StartedStep'
 import PriceCard from './Component/PriceCard/PriceCard'
+import Workflow from './Component/Workflow/Workflow'
 
 
 // fetch data
@@ -92,6 +93,7 @@ function App() {
 
       <StartedStep> </StartedStep>
       <PriceCard> </PriceCard>
+      <Workflow></Workflow>
 
 
       <Footer />
