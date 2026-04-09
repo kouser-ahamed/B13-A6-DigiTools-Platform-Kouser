@@ -1,24 +1,22 @@
-# DigiTools
+# DigiTools – Premium Digital Tools Platform
 
-## 1. Project Name
+![DigiTools Screenshot 1](src/assets/ProjectDemoSs/dg-1.png)  
+![DigiTools Screenshot 2](src/assets/ProjectDemoSs/dg-2.png)  
+![DigiTools Screenshot 3](src/assets/ProjectDemoSs/dg-3.png)  
 
-**DigiTools – Premium Digital Tools Platform**
-
----
-
-## 2. Project Description
-
-DigiTools is a modern, responsive web application designed to showcase and sell premium digital tools and services in one unified platform.  
-This project provides users with a smooth product browsing experience, an interactive cart system, and a clean UI suitable for real-world SaaS or digital product marketplaces.
-
-The application focuses on usability, performance, and scalable component-based architecture using React.  
-It is ideal for learning advanced React concepts such as state management, conditional rendering, reusable components, and dynamic data handling.
+**Live Demo:** [https://digitools-platform-kouser.netlify.app/](https://digitools-platform-kouser.netlify.app/)
 
 ---
 
-## 3. Technologies Used
+## Project Overview
 
-The following technologies and libraries were used to build this project:
+DigiTools is a modern, responsive web application that showcases and sells premium digital tools and services on a single platform.  
+It provides users with a smooth browsing experience, an interactive cart system, and a clean, professional UI suitable for SaaS or digital product marketplaces.  
+This project demonstrates real-world frontend practices using React and Tailwind CSS.
+
+---
+
+## Technologies Used
 
 - React.js  
 - JavaScript (ES6+)  
@@ -26,65 +24,98 @@ The following technologies and libraries were used to build this project:
 - React Hooks (useState, useEffect)  
 - React Icons  
 - React Toastify  
-- JSON Data Fetching  
-- Vite (for fast development build)
+- Vite  
+- JSON Data Fetching
 
 ---
 
-## 4. Core Features of the Project
+## Core Features
 
-### Feature 1: Dynamic Product Listing
-- Products are loaded dynamically from a JSON file using async data fetching.  
-- Each product card displays name, description, price, features, and tag type (new, popular, best seller).  
-- Clean and reusable Card component architecture.
+1. Dynamic Product Listing  
+   - Load products from a JSON file asynchronously.  
+   - Each card displays name, description, price, features, and tags (new, popular, best seller).  
+   - Reusable Card component architecture.
 
-### Feature 2: Cart Management System
-- Users can add products to the cart.  
-- Duplicate items are prevented with proper validation.  
-- Items can be removed individually from the cart.  
-- Total price is calculated automatically based on selected products.  
-- Checkout action clears the cart with success feedback.
+2. Cart Management System  
+   - Add/remove products to/from cart.  
+   - Prevent duplicate items.  
+   - Automatic total price calculation.  
+   - Checkout clears cart with success feedback.
 
-### Feature 3: Modern UI with Responsive Design
-- Fully responsive layout for mobile, tablet, and desktop devices.  
-- Custom navigation bar with mobile menu support.  
-- Smooth animations, hover effects, and transitions using Tailwind CSS.  
-- Professional sections such as Hero Banner, Pricing Plans, Workflow, and Getting Started Steps.
-
----
-
-## 5. Project Structure Overview
-
-- Component-based folder structure for better scalability  
-- Separate components for Navbar, Footer, Cards, Cart, Pricing, Workflow, etc.  
-- Centralized state management handled at App component level  
-- Clean separation between UI and logic  
+3. Modern UI & Responsive Design  
+   - Fully responsive for mobile, tablet, and desktop.  
+   - Custom navigation with mobile menu support.  
+   - Smooth animations and hover effects with Tailwind CSS.  
+   - Professional sections: Hero Banner, Pricing, Workflow, Getting Started Steps.
 
 ---
 
-## 6. Learning Outcome
+## Dependencies
 
-By building DigiTools, you can learn:
+- react  
+- react-dom  
+- react-icons  
+- react-toastify  
+- vite  
+- tailwindcss  
 
-- How to manage shared state between multiple components  
-- How to handle conditional rendering efficiently  
-- How to design reusable and maintainable React components  
-- How to create real-world UI layouts using Tailwind CSS  
-- How to build a complete frontend project ready for extension  
-
----
-
-## 7. Future Improvements
-
-- User authentication system  
-- Backend integration for real payments  
-- Database-driven product management  
-- Dashboard for admin product control  
-- Dark mode support  
+> All dependencies are listed in package.json and can be installed via npm install.
 
 ---
 
-## 8. Conclusion
+## Project Structure
 
-DigiTools is a complete frontend React project that demonstrates real-world application design and functionality.  
-It is suitable for portfolio use, learning advanced React patterns, and extending into a full-stack application.
+- Components: Navbar, Footer, Card, Cart, Pricing, Workflow, etc.  
+- Pages: Home, Product Listing, Page to Read, etc.  
+- Assets: Images, JSON data files.  
+- Centralized state managed at the App component level.  
+- Clean separation of UI and logic for maintainability.
+
+---
+
+## Local Setup Guide
+
+Navigate to the project folder  
+cd digitools  
+Install dependencies  
+npm install  
+Start the development server  
+npm run dev  
+Open in your browser  
+Go to http://localhost:5173 to view the app.
+
+---
+
+## Learning Outcomes
+
+By building DigiTools, you will learn:
+
+Shared state management across components  
+Conditional rendering in React  
+Designing reusable and maintainable components  
+Building real-world UI with Tailwind CSS  
+Structuring a complete frontend project ready for extension
+
+---
+
+## Future Improvements
+
+User authentication and login system  
+Backend integration for real payments  
+Database-driven product management  
+Admin dashboard for product control  
+Dark mode support
+
+---
+
+## Conclusion
+
+DigiTools is a complete frontend React project demonstrating real-world application design and functionality.  
+It is ideal for portfolios, learning advanced React patterns, and extending into a full-stack application.
+
+---
+
+## Links
+
+- Repo Link: [https://github.com/kouser-ahamed/B13-A6-DigiTools-Platform-Kouser](https://github.com/kouser-ahamed/B13-A6-DigiTools-Platform-Kouser)  
+- Live Link: [https://digitools-platform-kouser.netlify.app/](https://digitools-platform-kouser.netlify.app/)
